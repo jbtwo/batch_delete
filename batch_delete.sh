@@ -5,7 +5,7 @@ source options.txt
 file=input.txt
 lines=$(cat ${file})
 for line in ${lines}; do
-   curl 
+   curl \
       -X $METHOD \
       --retry 5 \
       -H "X-Shopify-Access-Token:$ACCESS_TOKEN" \
